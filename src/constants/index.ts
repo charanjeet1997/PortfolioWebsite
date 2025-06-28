@@ -24,7 +24,7 @@ import {
   jobit,
   tripguide,
   threejs, unity, unreal,
-} from '../assets';
+} from '../index.ts';
 
 export const navLinks: TNavLink[] = [
   {
