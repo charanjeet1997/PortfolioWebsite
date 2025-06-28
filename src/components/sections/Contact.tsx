@@ -13,9 +13,9 @@ const INITIAL_STATE = Object.fromEntries(
 );
 
 const emailjsConfig = {
-  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  accessToken: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN,
+  serviceId: "service_4x4rrry",
+  templateId: "template_9d26erw",
+  accessToken: "fZuf-FFLR9F5QA7g1",
 };
 
 const Contact = () => {
@@ -38,8 +38,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_4x4rrry",
-        "template_9d26erw",
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
         {
           form_name: form.name,
           to_name: "Charanjeet Singh Jaswani",
