@@ -21,8 +21,8 @@ const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -4.25, -1.5]}
+        scale={isMobile ? 0.35 : 0.75}
+        position={isMobile ? [0, -2.3, -0.5] : [0, -3, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -35,12 +35,13 @@ const ComputersCanvas = () => {
   useEffect(() => {
     // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
-
+    console.log(mediaQuery.matches);
     // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
 
     // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event: MediaQueryListEvent) => {
+      console.log(event.matches);
       setIsMobile(event.matches);
     };
 
@@ -55,9 +56,7 @@ const ComputersCanvas = () => {
 
   return (
     <>
-      {isMobile ? (
-        <></>
-      ) : (
+      {(
         <Canvas
           frameloop="demand"
           shadows
