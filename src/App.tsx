@@ -9,6 +9,7 @@ import {
   Tech,
   // Works,
   StarsCanvas,
+  Footer
 } from "./components";
 import { useEffect } from "react";
 import { config } from "./constants/config";
@@ -34,6 +35,7 @@ const App = () => {
         <div className="relative z-0">
           <StarsCanvas />
           <Contact />
+          <Footer />
 
         </div>
       </div>

@@ -14,9 +14,9 @@ import {
   web,
   javascript,
   typescript,
-  html,
+  // html,
   reactjs,
-  git,
+  // git,
   cactus,
   caperminttech,
   pixent,
@@ -70,10 +70,6 @@ const technologies: TTechnology[] = [
     icon: unreal,
   },
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -88,10 +84,6 @@ const technologies: TTechnology[] = [
   {
     name: "Three JS",
     icon: threejs,
-  },
-  {
-    name: "Git",
-    icon: git,
   },
 ];
 

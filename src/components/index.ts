@@ -15,6 +15,8 @@ import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
 import CanvasLoader from "./layout/Loader";
 
+import Footer  from './sections/Footer.tsx';
+
 export {
   Hero,
   Navbar,
@@ -29,4 +31,5 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  Footer
 };
